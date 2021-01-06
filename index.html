@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paint CSS</title>
+	<style>
+		div {
+			width: 400px;
+			height: 200px;
+			background-image: paint(bubblePaint);
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<script>
+		CSS.paintWorklet.addModule('bubble-paint.js');
+	</script>
+</body>
+</html>
